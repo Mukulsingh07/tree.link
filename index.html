@@ -1,126 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>linktree.rishi</title>
     <style>
-        body{
-            background-color: black;
-                     
-             }
-        .c-1{
-            display:block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top:10%;
-            height:auto;
-            max-width:15% ;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-blend-mode: darken;
+        }
+
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; 
+        }
+
+        .profile-image {
+            display: block;
+            margin: 1% auto;
+            height: 140px;
+            max-width: auto;
             border-radius: 50%;
             align-items: center;
-
         }
-        .c-2{
-            color: aliceblue;
+
+        .profile-name {
+            color: #fff;
             font-size: 28px;
             text-align: center;
             padding: 10px;
         }
-        .c-3{
-            color: aliceblue;
-            font-size: 28px;
-            text-align: center;
-            margin-top: 20px;
-            padding: 20px;
-            width: 298px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 28px;
-        }
-        
-        
 
-        
-    
-        .L-1{
+        .link {
             text-align: center;
-            background-color: rgb(110, 108, 108);
-            border: 1px solid rgb(89, 89, 93);
-            margin-top: 20px;
-            border-width: 20%;
+            background-color: rgb(84, 82, 82);
+            border: none;
+            margin-top: 15px;
             padding: 20px;
             width: 298px;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            border-radius: 40px;
+            border-radius: 10px;
             font-size: 18px;
-        }
-        a{
             text-decoration: none;
-            color: rgb(241, 241, 241);
-            transform: color 1s;
+            color: #f1f1f1;
+            transition: color 1s;
         }
-        a:hover{
+
+        .link:hover {
             color: black;
             background-color: white;
-
         }
-    
-        
-        .c0{
-            background-color: black
-            ;
+
+        .background {
+            background-color: black;
             width: 100%;
         }
-        @media (max-width: 600px) {
-            body{
-                background-size: contain;
-                 }
-                 .c-1{
-                max-width: 50%;
-            }
 
+        @media screen {
+            /* Add specific styles for different screen sizes if needed */
         }
-           
-        
-           
-            
-
-        
-            
-        .h1{
-            max-width:100%;
-            max-height: 100%;
-            display:flex;
-            align-items:center;
-        }
-    
-        
     </style>
-    
 </head>
-<body>
-         <img class="c-1" src="yuta.jpeg">
-            <div class="c-2" >Rishi.Singh</div>
-            <div class="c-3"> i code for fun</div>
-            
-            <a href="https://www.instagram.com/rishi.heh/" class="L-1">
-                Instagram
-            </a>
-            <a href="https://open.spotify.com/user/31lq2b4tn7b3dsur7z342f2frowa?si=be0c64b455f848b0" class="L-1">
-                Spotify
-                
-            </a>
-            <a href="https://twitter.com/rishi_heh" class="L-1">
-                Twitter
-            </a>
-            <a href="https://wa.link/tlcf4f" class="L-1">
-                Whatsapp
-            </a>
-    
-    
-    
 
+<body>
+    <video controls="false" autoplay loop muted>
+        <source src="Car Lights - Street Light and Dark Night 4k Video Free Background Download And Use it (2).mp4" type="video/mp4">
+    </video>
+
+    <img class="profile-image" src="yuta.jpeg">
+    <div class="profile-name">Rishi.Singh</div>
+    <div class="profile-name">i code for fun</div>
+
+    <a href="https://www.instagram.com/rishi.heh/" class="link">
+        Instagram
+    </a>
+    <a href="https://open.spotify.com/user/31lq2b4tn7b3dsur7z342f2frowa?si=be0c64b455f848b0" class="link">
+        Spotify
+    </a>
+    <a href="https://twitter.com/rishi_heh" class="link">
+        Twitter
+    </a>
+    <a href="https://wa.link/tlcf4f" class="link">
+        Whatsapp
+    </a>
 </body>
+
 </html>
